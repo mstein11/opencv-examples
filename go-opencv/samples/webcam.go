@@ -70,6 +70,6 @@ func ProcessImage(img *opencv.IplImage, win *opencv.Window, pos int) error {
 	// copy edge points
 	opencv.Copy(img, cedge, edge)
 
-	win.ShowImage(cedge)
+	win.ShowImage(img)
 	return nil
 }
